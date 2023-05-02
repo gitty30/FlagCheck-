@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800;900&display=swap');
+
+/* When you set box-sizing: border-box; on an element,
+ the padding and border of that element no longer increase its width. */
+*{
+    padding: 0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color: rgb(41, 88, 220);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* The translate CSS property allows you to transfer an 
+element from one place to another along the X (horizontal) axis, 
+the Y (vertical) axis, and the Z (depth) axis, 
+similar to how you might think of moving an element using offsets, 
+like top , bottom , left , and right   */
+
+.container{
+    background-color: aliceblue;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    width: 80vw;
+    max-width: 37em;
+    top:50%;
+    left: 50%;
+    padding: 3em 2.5em;
+    border-radius: 0.62em;
+    box-shadow: 0em 1.25em 1.8em rgb(8, 21,65, 0.25);
+}
+/* Grid and flexbox. The basic difference between CSS Grid Layout and CSS Flexbox Layout is that 
+flexbox was designed for layout in one dimension - either a row or a column. 
+Grid was designed for two-dimensional layout - rows, and columns at the same time. */
+.search-wrapper{
+    display: grid;
+    grid-template-columns: 9fr 3fr ;
+    gap:1.25em;
+}
+
+.search-wrapper button{
+    font-family: inherit;
+    font-size: 0.89em;
+    color: aliceblue;
+    background-color: rgb(41, 88, 220);
+    border: none;
+    border-radius: 2em;
+    padding: 0.91em;
+    width: 6.5em;
+    cursor: pointer;
+    transition: all 0.4s linear;
+  
+}
+
+.search-wrapper button:hover{
+   background:rgb(19, 52, 142) ;
+}
+
+.search-wrapper input{
+    font-family: inherit;
+    font-size: 1.1em;
+    padding: 0 0.62em;
+    border: none;
+    border-bottom: 2px solid #3d64e6;
+    color: rgb(40, 40, 40);
+    outline: 0;
+}
+
+
+#result{
+    margin-top: 1.25em ;
+}
+.container .flag-img{
+   display: block;
+   width: 45%;
+   min-width: 7.5em;
+   margin: 1.8em auto 1.2em auto;
+}
+.container h2{
+    font-weight: 600;
+    color: #222a43;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1.8em;
+}
+.data-wrapper {
+    margin-bottom: 1em;
+    letter-spacing: 0.3px;
+  }
+  .container h4 {
+    display: inline;
+    font-weight: 500;
+    color: #222a43;
+  }
+  .container span {
+    color: #5d6274;
+  }
+  .container h3 {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #ff465a;
+  }
